@@ -1,29 +1,36 @@
 import { Title } from "@/components/Title/Title"
 import styles from "./HomePage.module.css"
 
-export default function HomePage(){
+
+export default function HomePage() {
     const newDate: number = new Date().getHours()
-    function getGreeting(){
-        if(newDate >= 0 && newDate <= 7){
-            return 'Boa Madrugada'
-        } else if (newDate > 7 && newDate <= 13){
-            return 'Bom Dia'
-        } else if( newDate > 13 && newDate < 20){
-            return 'Boa Tarde'
-        } else if(newDate >= 20 && newDate <= 24){
-            return 'Boa Noite'
+
+    function getGreeting() {
+        if (newDate >= 0 && newDate < 7) {
+            return 'Good Night'
+        } else if (newDate < 13) {
+            return 'Good Morning'
+        } else if (newDate < 20) {
+            return 'Good Afternoon'
+        } else if (newDate <= 24) {
+            return 'Good Evening'
         }
     }
-
-    return(
+    console.log(newDate)
+    return (
         <div className={styles.container}>
-            <header className={styles.headerMorning}>
+            <header className={newDate >= 0 && newDate < 7 ? styles.headerNight : newDate < 13 ? styles.headerMorning : newDate < 20 ? styles.headerAfternoon : styles.headerEvening}>
                 <Title
-                greeting={getGreeting()}
-                title="Full Stack Developer"
-                name="Daniel Bárbara"
+                    greeting={getGreeting()}
+                    title="Full Stack Developer"
+                    name="Daniel Bárbara"
                 />
             </header>
+            <body className={styles.body}>
+                <div className={styles.greeting}>
+                    
+                </div>
+            </body>
         </div>
     )
 }

@@ -10,3 +10,31 @@
     justify-content: center;
     align-items: center;
 }
+
+.headerAfternoon{
+    width: 100%;
+    height: 30%;
+    background-image: linear-gradient(190deg, rgb(195, 179, 3) , darkblue , black 40%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerEvening{
+    width: 100%;
+    height: 30%;
+    background-image: linear-gradient(190deg, purple , rgb(50, 0, 50) , black 40%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerNight{
+    width: 100%;
+    height: 30%;
+    background-image: linear-gradient(190deg, darkblue , rgb(73, 1, 73) , black 40%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
