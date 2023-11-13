@@ -1,0 +1,15 @@
+.container{
+    width: 30%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    align-self: flex-start;
+}
+
+.name{
+    align-self: flex-end;
+}
+
