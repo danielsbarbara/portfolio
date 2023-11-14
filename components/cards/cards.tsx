@@ -26,9 +26,9 @@ export function Cards() {
     return (
         <div className={styles.container}>
             {projectImg.map(project =>
-                <div className={styles.content}>
+                <div className={styles.content} key={Math.random()}>
                     <Link href={project.link} target="blank" className={styles.link}>
-                        <img src={project.url} width="270px" />
+                        <img src={project.url} width="200px" />
                         <p className={styles.title}>{project.title}</p>
                         <p className={styles.technologies}>Technologies: {project.technologies}</p>
                     </Link>

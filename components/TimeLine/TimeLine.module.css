@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 1rem;
+    width: 70%;
+    animation: show 500ms ease-in;
+}
+
+@keyframes show {
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.h1 {
+    color: white;
+}
+
+.year2014{
+    display: flex;
+    gap: 2rem;
+    color: white;
+    display: flex;
+    font-size: 0.7rem;
+}
+
+.year2019{
+    gap: 2rem;
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 0.7rem;
+}
+
+.year2023{
+    gap: 2rem;
+    color: white;
+    display: flex;
+    font-size: 0.7rem;
+}

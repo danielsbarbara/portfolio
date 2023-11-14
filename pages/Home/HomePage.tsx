@@ -4,6 +4,7 @@ import { SocialMedia } from "@/components/socialMedia/SocialMedia"
 import { Cards } from "@/components/cards/cards"
 import { NavBar } from "@/components/navbar/NavBar"
 import { useState } from "react"
+import { AboutMe } from "../AboutMe/AboutMe"
 
 export default function HomePage() {
     const [animeText, setAnimeText] = useState(0)
@@ -25,7 +26,7 @@ export default function HomePage() {
             return 'Good Evening'
         }
     }
-    console.log(newDate)
+
     return (
         <div className={styles.container}>
             <header className={newDate >= 0 && newDate < 7 ? styles.headerNight : newDate < 13 ? styles.headerMorning : newDate < 20 ? styles.headerAfternoon : styles.headerEvening}>
@@ -41,6 +42,7 @@ export default function HomePage() {
             <div className={styles.body}>
                 <SocialMedia />
                 <div className={styles.cards}>
+                    {animeText === 1 && <AboutMe/>}
                     {animeText === 2 && <Cards />}
                 </div>
             </div>

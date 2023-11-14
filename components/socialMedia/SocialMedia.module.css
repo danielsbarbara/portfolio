@@ -1,4 +1,5 @@
 .container{
+    position: fixed;
     gap: 1rem;
     color: white;
     display: flex;
