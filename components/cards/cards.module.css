@@ -1,8 +1,9 @@
 .container{
-    width: 100%;
     animation: show 500ms ease-in;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 1rem;
 }
 
 @keyframes show {
@@ -18,15 +19,17 @@
 .content{
     border: 2px solid white;
     border-radius: 10px;
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     overflow: hidden;
     transition: 500ms;
 }
 
 .link{
+    width: 100%;
     text-align: center;
     text-decoration: none;
     color: black;

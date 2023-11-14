@@ -1,11 +1,13 @@
 .container{
- 
     gap: 1rem;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    align-self: flex-start;
+    justify-self: flex-start;
+    
 }
 
 .content {
@@ -13,6 +15,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: 500ms;
+}
+
+.content:hover {
+    transition: 500ms;
+    text-shadow: 0 0 10px white;
+    transform: translateY(-10px);
 }
 
 .imgDiv {

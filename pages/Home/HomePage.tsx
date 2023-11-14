@@ -3,12 +3,12 @@ import styles from "./HomePage.module.css"
 import { SocialMedia } from "@/components/socialMedia/SocialMedia"
 import { Cards } from "@/components/cards/cards"
 import { NavBar } from "@/components/navbar/NavBar"
-import {useState} from "react"
+import { useState } from "react"
 
 export default function HomePage() {
     const [animeText, setAnimeText] = useState(0)
 
-    function handleClick(value: number){
+    function handleClick(value: number) {
         setAnimeText(value)
     }
 
@@ -36,12 +36,10 @@ export default function HomePage() {
                 />
             </header>
             <nav className={styles.navbar}>
-                <NavBar animeText={animeText} handleClick={handleClick}/>
+                <NavBar animeText={animeText} handleClick={handleClick} />
             </nav>
             <div className={styles.body}>
-                <div className={styles.socialmedia}>
-                    <SocialMedia />
-                </div>
+                <SocialMedia />
                 <div className={styles.cards}>
                     {animeText === 2 && <Cards />}
                 </div>
