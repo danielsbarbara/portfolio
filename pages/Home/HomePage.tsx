@@ -1,5 +1,7 @@
 import { Title } from "@/components/Title/Title"
 import styles from "./HomePage.module.css"
+import { NavBar } from "@/components/navbar/NavBar"
+import { Cards } from "@/components/cards/cards"
 
 
 export default function HomePage() {
@@ -26,11 +28,14 @@ export default function HomePage() {
                     name="Daniel Bárbara"
                 />
             </header>
-            <body className={styles.body}>
-                <div className={styles.greeting}>
-                    
+            <div className={styles.body}>
+                <div className={styles.NavBar}>
+                    <NavBar /> 
                 </div>
-            </body>
+                <div className={styles.cards}>
+                    <Cards/>
+                </div>
+            </div>
         </div>
     )
 }
