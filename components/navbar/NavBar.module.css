@@ -1,0 +1,33 @@
+.container{
+    color: white;
+    display: flex;
+    gap: 2rem;
+    cursor: pointer;
+}
+
+.aboutme{
+    display: flex;
+    flex-direction: column;
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+}
+
+.line{
+    animation: showLine 500ms ease-in;
+    height: 3px;
+    width: 100%;
+    background-color: white;
+}
+
+@keyframes showLine {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

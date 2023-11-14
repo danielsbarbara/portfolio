@@ -14,6 +14,11 @@ const projectImg: Array<projectDescripitons> = [
         title: "Guess The Number",
         technologies: "MongoDB, TypeScript, React, Next.js",
         link: "https://guess-the-number-dusky.vercel.app/"
+    }, {
+        url: "/images/SpotiStats.jpg",
+        title: "SpotiStats",
+        technologies: "MongoDB, JavaScript, React, Next.js",
+        link: "https://react-next-js-pao2.vercel.app/"
     }
 ]
 

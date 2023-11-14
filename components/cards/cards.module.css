@@ -1,5 +1,18 @@
 .container{
     width: 100%;
+    animation: show 500ms ease-in;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    };
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .content{
